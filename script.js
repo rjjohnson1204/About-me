@@ -66,22 +66,25 @@ else if (height === 'no') {
 
 
 var favoriteNumber = 3
-var counter = 0
 console.log('numberGuess', numberGuess);
 var numberGuess = parseInt(prompt(' What is my favorite number? You have four guesses '));
 console.log('numberGuess', numberGuess);
 
-while (numberGuess !== favoriteNumber && counter < 3) {
-  counter++;
+if (numberGuess === favoriteNumber) {
+     alert('Correct');
+     score++;
+  }
+  else if (favoriteNumber !== numberGuess) {
+    var counter = 0;
+    while (counter < 3 && numberGuess !== favoriteNumber) {
+    parseInt(prompt('Close, try again!'));
+    counter++;
 
-  // if (numberGuess === 3) {
-  //   alert('Correct')
   }
-  if (numberGuess > favoriteNumber) {
-    parseInt(alert(' Close, a little lower!'));
+  if (numberGuess === favoriteNumber) {
+    parseInt(alert(' correct '));
+    score++;
   }
-  else if (numberGuess < 3) {
-    parseInt(alert(' Close, a little higher!'));
   // } else{
   //   numberGuess = parseInt(prompt( 'correct'));
   }
@@ -99,20 +102,6 @@ while (numberGuess !== favoriteNumber && counter < 3) {
 
 
 
-
-
-
-// console.log('numberGuess', numberGuess);
-// var favoriteNumber = 3
-// var numberGuess  = prompt(' What is my favorite number? ');
-// console.log('numberGuess', numberGuess);
-
-// if (numberGuess === 3){
-//     alert( 'correct')
-// }
-// else if ( numberGuess > 3){
-// alert( ' Close, a little lower!')
-// }
 // else if ( numberGuess < 3){
 //     alert( ' Close, a little higher!')
 //     }
