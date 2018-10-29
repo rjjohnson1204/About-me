@@ -47,7 +47,7 @@ var pie = prompt(' Do I like apple pie?');
 var res = pie.toLowerCase()
 console.log('pie', pie);
 if (pie === 'yes') {
-  alert(' Sure is!');
+  alert(' Yup!');
 }
 else if (height === 'no') {
   alert(' Wrong ')
@@ -72,23 +72,43 @@ console.log('numberGuess', numberGuess);
 
 if (numberGuess === favoriteNumber) {
      alert('Correct');
-     score++;
+}
+else if (favoriteNumber !== numberGuess) {
+  var counter = 0;
+  while (counter < 3 && numberGuess !== favoriteNumber) {
+  parseInt(prompt('Close, try again!'));
+  counter++;
+  // score++;
   }
-  else if (favoriteNumber !== numberGuess) {
-    var counter = 0;
-    while (counter < 3 && numberGuess !== favoriteNumber) {
-    parseInt(prompt('Close, try again!'));
-    counter++;
-
-  }
+}
   if (numberGuess === favoriteNumber) {
-    parseInt(alert(' correct '));
-    score++;
-  }
-  // } else{
-  //   numberGuess = parseInt(prompt( 'correct'));
-  }
-  // else(alert( 'Correct'));
+    alert(' correct ');
+}
+    // score++; }
+
+  
+
+//   var states = ["HAWAII" , "CALIFORNIA" , "NEVADA" , "TEXAS" , "NEW JERSEY"];
+// var ques7 = prompt ("What states have I lived in, besides Washington?  (answer in capital letter)" ) .toUpperCase();
+// var answer = false;
+// var counter = 0;
+// while (counter < 7 && answer === false) {
+// for (var arrayID = 0; arrayID < states.length; arrayID++) {
+//   if (ques7 === states[arrayID]) {
+//     answer = true;
+//     break;
+//   }}
+// }
+//   if (answer === true) {
+//     alert("That is correct! I've lived in " + states);
+//   } 
+//   else {
+//     ques7 = prompt ("That is incorrect. Please try again. (answer in capital letter)");
+//     counter++;
+//   }
+
+  // else {(alert( 'Correct'));
+  
   //  if (numberGuess === 3){
   //     alert( 'Correct')
 
