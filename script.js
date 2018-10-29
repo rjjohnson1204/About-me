@@ -88,24 +88,24 @@ else if (favoriteNumber !== numberGuess) {
 
   
 
-//   var states = ["HAWAII" , "CALIFORNIA" , "NEVADA" , "TEXAS" , "NEW JERSEY"];
-// var ques7 = prompt ("What states have I lived in, besides Washington?  (answer in capital letter)" ) .toUpperCase();
-// var answer = false;
-// var counter = 0;
-// while (counter < 7 && answer === false) {
-// for (var arrayID = 0; arrayID < states.length; arrayID++) {
-//   if (ques7 === states[arrayID]) {
-//     answer = true;
-//     break;
-//   }}
-// }
-//   if (answer === true) {
-//     alert("That is correct! I've lived in " + states);
-//   } 
-//   else {
-//     ques7 = prompt ("That is incorrect. Please try again. (answer in capital letter)");
-//     counter++;
-//   }
+  var states = ["HAWAII" , "CALIFORNIA" , "NEVADA" , "TEXAS" , "NEW JERSEY"];
+var ques7 = prompt ("What states have I lived in, besides Washington?  (answer in capital letter)" ) .toUpperCase();
+var answer = false;
+var counter = 0;
+while (counter < 7 && answer === false) {
+for (var arrayID = 0; arrayID < states.length; arrayID++) {
+  if (ques7 === states[arrayID]) {
+    answer = true;
+    break;
+  }}
+}
+  if (answer === true) {
+    alert("That is correct! I've lived in " + states);
+  } 
+  else {
+    ques7 = prompt ("That is incorrect. Please try again. (answer in capital letter)");
+    counter++;
+  }
 
   // else {(alert( 'Correct'));
   
