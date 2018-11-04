@@ -74,10 +74,12 @@ if (numberGuess === favoriteNumber) {
      alert('Correct');
 }
 else if (favoriteNumber !== numberGuess) {
+  console.log('numberGuess', numberGuess )
   var counter = 0;
   while (counter < 3 && numberGuess !== favoriteNumber) {
   parseInt(prompt('Close, try again!'));
   counter++;
+  
   // score++;
   }
 }
@@ -89,12 +91,12 @@ else if (favoriteNumber !== numberGuess) {
   
 
   var states = ["HAWAII" , "CALIFORNIA" , "NEVADA" , "TEXAS" , "NEW JERSEY"];
-var ques7 = prompt ("What states have I lived in, besides Washington?  (answer in capital letter)" ) .toUpperCase();
+var stateGuess = prompt ("What states have I lived in, besides Washington?  (answer in uppercase letters)" ) .toUpperCase();
 var answer = false;
 var counter = 0;
-while (counter < 7 && answer === false) {
-for (var arrayID = 0; arrayID < states.length; arrayID++) {
-  if (ques7 === states[arrayID]) {
+while (counter < 5 && answer === false) {
+for (var i = 0; i < states.length; i++) {
+  if (stateGuess === states[i]) {
     answer = true;
     break;
   }}
@@ -103,8 +105,8 @@ for (var arrayID = 0; arrayID < states.length; arrayID++) {
     alert("That is correct! I've lived in " + states);
   } 
   else {
-    ques7 = prompt ("That is incorrect. Please try again. (answer in capital letter)");
-    counter++;
+    stateGuess = prompt ("That is incorrect. Please try again. (answer in capital letter)");
+    // counter++;
   }
 
   // else {(alert( 'Correct'));
